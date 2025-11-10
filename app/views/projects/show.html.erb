@@ -5,6 +5,6 @@
   <%= @project.name %>
   
 </p>
-<p>
+<%= button_to "Delete Project", project_path(@project), method: :delete %>
 
 <%= link_to 'Back to Projects', projects_path %>
